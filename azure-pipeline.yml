@@ -3,9 +3,9 @@ trigger:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '3de44660-116f-4a2e-9db3-ef016b02c587'
-  imageRepository: 'anmolkpipelinepractice'
-  containerRegistry: 'pipelinetest11.azurecr.io'
+  dockerRegistryServiceConnection: '718d77ce-a2b3-41e3-b673-60ebeb6781c0'
+  imageRepository: 'app2'
+  containerRegistry: 'registrydemo11.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
