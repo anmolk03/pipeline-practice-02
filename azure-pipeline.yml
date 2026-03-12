@@ -3,8 +3,8 @@ trigger:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '718d77ce-a2b3-41e3-b673-60ebeb6781c0'
-  imageRepository: 'app2'
+  dockerRegistryServiceConnection: 'fd4efae4-5550-4a3c-b54e-47f1f2d705c5'
+  imageRepository: 'node'
   containerRegistry: 'registrydemo11.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
@@ -16,7 +16,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: self-hosted-linux
+      name: self-hosted
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
